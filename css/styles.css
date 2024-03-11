@@ -1,0 +1,236 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+    --color-primary: #f3f1ec;
+    --color-secondary: #98c1e1;
+    --color-dark: #002147;
+}
+
+* {
+    /* color: white;
+    background-color: #002147; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+ol li {
+    list-style: decimal;
+    list-style-position: inside;
+}
+
+/* img {
+    width: 20rem;
+    height: 2%;
+} */
+
+.nav-bar {
+    background-color: var(--color-dark);
+    color: var(--color-primary);
+    font-size: large;
+}
+
+/* Title */
+.hero {
+    margin-top: 2rem;
+    /* background-color: aqua; */
+    height: fit-content;
+    text-align: center;
+}
+
+.conference {
+    margin: 1rem;
+}
+
+.author-list {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+/* .name {
+    background-color: aquamarine;
+} */
+
+.orgnization-list {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+
+.button-group {
+    /* background-color: rgb(43, 226, 134); */
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.button {
+    margin-top: 1rem;
+    /* background-color: rgb(92, 92, 221); */
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.icon {
+    height: 4rem;
+}
+
+/* Image comparison */
+.b-dics {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.b-dics #b-dics__small {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.comparison-slider {
+    margin: 2rem 2rem 0 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: beige;
+}
+
+.teaser-caption-container {
+    margin: 0 2rem 2rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: beige;
+}
+
+.teaser-caption-container>.teaser-caption {
+    flex: 1;
+}
+
+/* .teaser-caption {
+    background-color: aquamarine;
+} */
+
+
+/* Abstract */
+.abstract {
+    text-align: left;
+    /* background-color: aquamarine; */
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 2rem;
+}
+
+.abstract p {
+    text-align: justify;
+}
+
+.method-illustration {
+    display: flex;
+    /* background-color: #98c1e1; */
+    height: 10%;
+    margin-bottom: 6rem;
+    border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+    border-top: 1px solid rgba(117, 117, 117, 0.2);
+}
+
+model-viewer{
+    width: 250px;
+    height:250px;
+}
+
+.method-illustration.viewer-3d {
+    /* background-color: aqua; */
+    border-radius: 10%;
+    width: 20%;
+    justify-content: center; 
+    align-items: center; 
+    display: flex;
+}
+
+.method-illustration.method-gif {
+    /* background-color: aqua; */
+    width: 100%; 
+    justify-content: center; 
+    align-items: center; 
+    display: flex;
+    
+}
+
+/* video */
+.video {
+    margin-bottom: 4rem;
+}
+.video-wrapper {
+    position: relative; 
+    padding-bottom: 56.25%; /* 16:9 */  
+    padding-top: 25px;
+    /* background-color: #98c1e1; */
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.video-wrapper iframe {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+}
+
+.results-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.results-container{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+/* .single-img-wrapper {
+    background-color: aqua;
+} */
+
+.result-gif {
+    width: 200px;
+}
+
+/* citation */
+.citation {
+    text-align: left;
+    padding: 1rem 1rem;
+    margin-bottom: 2rem;
+    background-color: rgb(91, 91, 91, 0.5);
+    border-radius: 10px;
+}
+
+.footer {
+    text-align: center;
+    color: var(--color-primary);
+    background-color: var(--color-dark);
+}
+
+/* Link */
+/* a:visited {
+    color: var(--color-secondary);
+} */
+
+a:hover {
+    text-decoration: underline;
+    color: var(--color-secondary);
+}
+
+.icon:hover {
+    fill: var(--color-secondary);
+}

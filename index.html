@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="./src/dics.css"> 
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+    <title>Document</title>
+</head>
+<body>
+
+    <section class="nav-bar">
+        <div class="abstract">
+            Abstract
+        </div>
+    </section>
+
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="10%" height="10%">
+        <circle cx="100" cy="100" r="90" fill="#1D3557" />
+        <circle cx="100" cy="100" r="70" fill="#457B9D" />
+        <text x="50" y="130" font-family="Arial, sans-serif" font-size="100" fill="#A8DADC">G</text>
+        <text x="105" y="130" font-family="Arial, sans-serif" font-size="100" fill="#A8DADC">C</text>
+      </svg> -->
+      
+      
+    <section class="hero">
+        <div class="title">
+            <!-- <h1 class="text-5xl font-bold font-sans">
+                GaussCtrl
+            </h1> -->
+    
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"  width="10%" height="10%">
+                <path d="M67.5,67.5v65c0,8.28,6.72,15,15,15h45c8.28,0,15-6.72,15-15v-65c0-8.28-6.72-15-15-15h-45C74.22,52.5,67.5,59.22,67.5,67.5z" fill="#98c1e1"/>
+                <path d="M112.5,52.5h-45c-8.28,0-15,6.72-15,15v65c0,8.28,6.72,15,15,15h45c8.28,0,15-6.72,15-15v-65C127.5,59.22,120.78,52.5,112.5,52.5z" fill="#98c1e1"/>
+                <path d="M127.5,97.5h-45c-8.28,0-15,6.72-15,15v20c0,8.28,6.72,15,15,15h45c8.28,0,15-6.72,15-15v-20C142.5,104.22,135.78,97.5,127.5,97.5z" fill="#98c1e1"/>
+                <path d="M102.5,127.5h-20c-8.28,0-15,6.72-15,15v20c0,8.28,6.72,15,15,15h20c8.28,0,15-6.72,15-15v-20C117.5,134.22,110.78,127.5,102.5,127.5z" fill="#FFFFFF"/>
+                <path d="M77.5,127.5H67.5c-8.28,0-15,6.72-15,15v20c0,8.28,6.72,15,15,15h10c8.28,0,15-6.72,15-15v-20C92.5,134.22,85.78,127.5,77.5,127.5z" fill="#FFFFFF"/>
+                <path d="M77.5,112.5H67.5c-8.28,0-15,6.72-15,15v10c0,8.28,6.72,15,15,15h10c8.28,0,15-6.72,15-15v-10C92.5,119.22,85.78,112.5,77.5,112.5z" fill="#FFFFFF"/>
+                
+                <path d="M167.5,67.5v65c0,8.28-6.72,15-15,15h-45c-8.28,0-15-6.72-15-15v-65c0-8.28,6.72-15,15-15h45C160.78,52.5,167.5,59.22,167.5,67.5z" fill="#ff8800"/>
+                <path d="M122.5,52.5h45c8.28,0,15,6.72,15,15v65c0,8.28-6.72,15-15,15h-45c-8.28,0-15-6.72-15-15v-65C107.5,59.22,114.22,52.5,122.5,52.5z" fill="#ff8800"/>
+                <path d="M107.5,97.5h45c8.28,0,15,6.72,15,15v20c0,8.28-6.72,15-15,15h-45c-8.28,0-15-6.72-15-15v-20C92.5,104.22,99.22,97.5,107.5,97.5z" fill="#ff8800"/>
+                <path d="M132.5,127.5h20c8.28,0,15,6.72,15,15v20c0,8.28-6.72,15-15,15h-20c-8.28,0-15-6.72-15-15v-20C117.5,134.22,124.22,127.5,132.5,127.5z" fill="#FF9800"/>
+                <path d="M157.5,127.5h10c8.28,0,15,6.72,15,15v20c0,8.28-6.72,15-15,15h-10c-8.28,0-15-6.72-15-15v-20C142.5,134.22,149.22,127.5,157.5,127.5z" fill="#FF9800"/>
+                <path d="M157.5,112.5h10c8.28,0,15,6.72,15,15v10c0,8.28-6.72,15-15,15h-10c-8.28,0-15-6.72-15-15v-10C142.5,119.22,149.22,112.5,157.5,112.5z" fill="#FF9800"/>
+              </svg> -->
+    
+            <h2 class="text-4xl" style="color: #ff8800;">
+                <u style="color: #ff8800;">GaussCtrl</u>: Multi-View Consistent Text-Driven 3D Gaussian Splatting Editing
+            </h2>
+    
+    
+            <div class="conference">
+                <h3 class="text-3xl">
+                    Conference
+                </h3>
+            </div>
+    
+            <div class="author-list text-2xl flex flex-wrap">
+                <div class="name"><a href="https://maximume-wu.github.io/" class="name-link" target="_blank">Jing Wu<sup>*</sup> </a></div>
+                <div class="name"><a href="https://jwbian.net/" class="name-link" target="_blank">Jia-Wang Bian<sup>*</sup> </a></div>
+                <div class="name"><a href="" class="name-link" target="_blank">Xinghui Li</a></div>
+                <div class="name"><a href="https://wanggrun.github.io/" class="name-link" target="_blank">Guangrun Wang</a></div>
+                <div class="name"><a href="https://mbzuai.ac.ae/study/faculty/ian-reid/" class="name-link" target="_blank">Ian Reid</a></div>
+                <div class="name"><a href="https://www.robots.ox.ac.uk/~phst/" class="name-link" target="_blank">Philip Torr</a></div>
+                <div class="name"><a href="https://www.robots.ox.ac.uk/~victor/" class="name-link" target="_blank">Victor Adrian Prisacariu</a></div>
+            </div>
+    
+            <div class="orgnization-list text-1xl flex flex-wrap">
+                University of Oxford
+                <!-- <ol type="1">
+                    <li>University of Oxford</li>
+                </ol> -->
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section class="button-group">
+
+        <div class="button">
+            
+            <a href="#" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon">
+                    <path fill-rule="evenodd" d="M4.125 3C3.089 3 2.25 3.84 2.25 4.875V18a3 3 0 0 0 3 3h15a3 3 0 0 1-3-3V4.875C17.25 3.839 16.41 3 15.375 3H4.125ZM12 9.75a.75.75 0 0 0 0 1.5h1.5a.75.75 0 0 0 0-1.5H12Zm-.75-2.25a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5H12a.75.75 0 0 1-.75-.75ZM6 12.75a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5H6Zm-.75 3.75a.75.75 0 0 1 .75-.75h7.5a.75.75 0 0 1 0 1.5H6a.75.75 0 0 1-.75-.75ZM6 6.75a.75.75 0 0 0-.75.75v3c0 .414.336.75.75.75h3a.75.75 0 0 0 .75-.75v-3A.75.75 0 0 0 9 6.75H6Z" clip-rule="evenodd" />
+                    <path d="M18.75 6.75h1.875c.621 0 1.125.504 1.125 1.125V18a1.5 1.5 0 0 1-3 0V6.75Z" />
+                </svg>                  
+                Paper
+            </a>
+        </div>
+
+        <div class="button">
+            <a href="#" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon">
+                    <path fill-rule="evenodd" d="M2.25 6a3 3 0 0 1 3-3h13.5a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V6Zm3.97.97a.75.75 0 0 1 1.06 0l2.25 2.25a.75.75 0 0 1 0 1.06l-2.25 2.25a.75.75 0 0 1-1.06-1.06l1.72-1.72-1.72-1.72a.75.75 0 0 1 0-1.06Zm4.28 4.28a.75.75 0 0 0 0 1.5h3a.75.75 0 0 0 0-1.5h-3Z" clip-rule="evenodd" />
+                </svg>
+                Code
+            </a>
+        </div>
+
+        <div class="button">
+            <a href="#" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon">
+                    <path d="M21 6.375c0 2.692-4.03 4.875-9 4.875S3 9.067 3 6.375 7.03 1.5 12 1.5s9 2.183 9 4.875Z" />
+                    <path d="M12 12.75c2.685 0 5.19-.586 7.078-1.609a8.283 8.283 0 0 0 1.897-1.384c.016.121.025.244.025.368C21 12.817 16.97 15 12 15s-9-2.183-9-4.875c0-.124.009-.247.025-.368a8.285 8.285 0 0 0 1.897 1.384C6.809 12.164 9.315 12.75 12 12.75Z" />
+                    <path d="M12 16.5c2.685 0 5.19-.586 7.078-1.609a8.282 8.282 0 0 0 1.897-1.384c.016.121.025.244.025.368 0 2.692-4.03 4.875-9 4.875s-9-2.183-9-4.875c0-.124.009-.247.025-.368a8.284 8.284 0 0 0 1.897 1.384C6.809 15.914 9.315 16.5 12 16.5Z" />
+                    <path d="M12 20.25c2.685 0 5.19-.586 7.078-1.609a8.282 8.282 0 0 0 1.897-1.384c.016.121.025.244.025.368 0 2.692-4.03 4.875-9 4.875s-9-2.183-9-4.875c0-.124.009-.247.025-.368a8.284 8.284 0 0 0 1.897 1.384C6.809 19.664 9.315 20.25 12 20.25Z" />
+                </svg>
+                Data
+            </a>
+        </div>
+
+    </section>
+
+
+
+    <div class="comparison-slider">  
+        <div class="b-dics" >
+            <!-- <img src="./teaser/bear.gif" alt="Original"> -->
+            <!-- <img src="./teaser/in2n_bear_grizzly.gif" alt="IN2N"> -->
+            <img src="./teaser/ours_bear_grizzly.gif" alt="Ours">
+            <img src="./teaser/ig2g_bear_grizzly.gif" alt="IGS2GS">
+            <!-- <img src="./teaser/vica_bear_grizzly.gif" alt="ViCA"> -->
+        </div>
+
+    
+        <div class="b-dics" >
+            <!-- <img src="./teaser/bear.gif" alt="Original"> -->
+            <!-- <img src="./teaser/in2n_bear_polar.gif" alt="IN2N"> -->
+            <img src="./teaser/ours_bear_polar.gif" alt="Ours">
+            <img src="./teaser/ig2g_bear_polar.gif" alt="IGS2GS">
+            <!-- <img src="./teaser/vica_bear_polar.gif" alt="ViCA"> -->
+        </div>
+    </div>
+
+    <div class="teaser-caption-container" >
+        <div class="teaser-caption text-center"><i>Edit bear statue to a grizzly bear</i></div>
+        <div class="teaser-caption text-center"><i>Edit bear statue to a polar bear</i></div>
+    </div>
+
+    <!-- https://github.com/sneas/img-comparison-slider
+    <div class="comparison-slider flex flex-wrap">
+        <div class="slider-container">
+            <div class="text-1xl flex" style="justify-content: space-between; font-weight: bold;">
+                <div>Original</div> 
+                <div>Ours</div>
+            </div>
+            <img-comparison-slider hover="True">
+                <img slot="first" src="imgs/bear.gif" />
+                <img slot="second" src="imgs/ours_grizzly_bear.gif" />
+            </img-comparison-slider>
+        </div>
+
+        <div class="slider-container">
+            <div class="text-1xl flex" style="justify-content: space-between; font-weight: bold;">
+                <div>Original</div> 
+                <div>Ours</div>
+            </div>
+            <img-comparison-slider hover="True">
+                <img slot="first" src="imgs/bear.gif" />
+                <img slot="second" src="imgs/ours_grizzly_bear.gif" />
+            </img-comparison-slider>
+        </div>
+    </div> -->
+
+    
+    
+    <div class="abstract">
+        <h2 class="text-3xl" >
+            <b>Abstract</b>
+        </h2>
+        <p>
+            We propose GaussCtrl, a text-driven method to edit a 3D scene reconstructed by the 3D Gaussian Splatting (3DGS).
+            Our method first renders a collection of images by using the 3DGS and edits them by using a pre-trained 2D diffusion model (ControlNet) based on the input prompt, which is then used to optimise the 3D model.
+            Our key contribution is multi-view consistent editing, which enables editing all images together instead of iteratively editing one image while updating the 3D model as in previous works.
+            It leads to faster editing as well as higher visual quality.
+            This is achieved by the two terms: 
+            (a) <b>depth-conditioned editing</b> that enforces geometric consistency across multi-view images by leveraging naturally consistent depth maps.
+            (b) <b>attention-based latent code alignment</b> that unifies the appearance of edited images by conditioning their editing to several reference views through self and cross-view attention between images' latent representations.
+            Experiments demonstrate that our method achieves faster editing and better visual results than previous state-of-the-art methods. 
+        </p>
+    </div>
+
+    <div class="abstract">
+        <h2 class="text-3xl" >
+            <b>Method</b>
+        </h2>
+        <p>
+            We propose GaussCtrl, a text-driven method to edit a 3D scene reconstructed by the 3D Gaussian Splatting (3DGS).
+            Our method first renders a collection of images by using the 3DGS and edits them by using a pre-trained 2D diffusion model (ControlNet) based on the input prompt, which is then used to optimise the 3D model.
+            Our key contribution is multi-view consistent editing, which enables editing all images together instead of iteratively editing one image while updating the 3D model as in previous works.
+            It leads to faster editing as well as higher visual quality.
+            This is achieved by the two terms: 
+            (a) <b>depth-conditioned editing</b> that enforces geometric consistency across multi-view images by leveraging naturally consistent depth maps.
+            (b) <b>attention-based latent code alignment</b> that unifies the appearance of edited images by conditioning their editing to several reference views through self and cross-view attention between images' latent representations.
+            Experiments demonstrate that our method achieves faster editing and better visual results than previous state-of-the-art methods. 
+        </p>
+    </div>
+    
+    <div class="method-illustration">
+        <div class="viewer-3d">
+            <model-viewer src="./imgs/bearstatue_cropped.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1" camera-orbit="39.91deg 75.19deg 4.273m" field-of-view="30deg" auto-rotate environment-image="legacy" auto-rotate>
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+            </model-viewer>      
+        </div> 
+
+        <div class="method-gif">
+            <img src="./imgs/method_light.gif"  alt="" >
+        </div>
+
+        <div class="viewer-3d">
+            <model-viewer src="./imgs/polarbear_cropped.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1" camera-orbit="39.91deg 75.19deg 4.273m" field-of-view="30deg" auto-rotate environment-image="legacy">
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+            </model-viewer>  
+        </div>
+    </div>
+    
+    <section class="video" >
+        <h2 class="text-3xl text-center" >
+            <b>Videos</b>
+        </h2>
+        <div class="video-wrapper">
+            <iframe
+            src="https://www.youtube.com/embed/tgbNymZ7vqY">
+            </iframe>
+        </div>
+    </section>
+    
+    <!-- Result -->
+    <div class="abstract">
+        <h2 class="text-3xl" >
+            <b>Result</b>
+        </h2>
+        <p>
+            Here, we include more examples besides those in our paper. 
+        </p>
+    </div>
+
+    <div class="results-container"> 
+        <!-- Bear -->
+        <div class="results-wrapper">
+            <div class="single-img-wrapper">
+                <img class="result-gif" src="./results/bear.gif" alt="">
+                Bear statue
+            </div>
+            <div class="single-img-wrapper">
+                <img class="result-gif" src="./results/bear_grizzly.gif" alt="">
+                Grizzly bear
+            </div>
+            <div class="single-img-wrapper">
+                <img class="result-gif" src="./results/bear_polar.gif" alt="">
+                Polar bear
+            </div>
+            <div class="single-img-wrapper">
+                <img class="result-gif" src="./results/bear_goldenstatue.gif" alt="">
+                Golden bear statue
+            </div>
+        </div>
+
+        <!-- Dinosaur -->
+        <div class="results-wrapper">
+            <div class="single-img-wrapper">
+                <img class="result-gif" src="./results/dinosaur.gif" alt="">
+                Bear statue
+            </div>
+            <div class="single-img-wrapper">
+                <img class="result-gif" src="./results/dinosaur_night.gif" alt="">
+                Grizzly bear
+            </div>
+            <div class="single-img-wrapper">
+                <img class="result-gif" src="./results/dinosaur_robot.gif" alt="">
+                Polar bear
+            </div>
+            <div class="single-img-wrapper">
+                <img class="result-gif" src="./results/dinosaur_snow.gif" alt="">
+                Golden bear statue
+            </div>
+            <div class="single-img-wrapper">
+                <img class="result-gif" src="./results/dinosaur_storm.gif" alt="">
+                Golden bear statue
+            </div>
+            <div class="single-img-wrapper">
+                <img class="result-gif" src="./results/dinosaur_water.gif" alt="">
+                Golden bear statue
+            </div>
+        </div>
+
+        <!-- face 1 -->
+        <div class="results-wrapper">
+            <div class="single-img-wrapper">
+                <img class="result-gif" src="./results/face.gif" alt="">
+                Grizzly bear
+            </div>
+            <div class="single-img-wrapper">
+                <img class="result-gif" src="./results/face_bust.gif" alt="">
+                Polar bear
+            </div>
+            <div class="single-img-wrapper">
+                <img class="result-gif" src="./results/face_glasses.gif" alt="">
+                Golden bear statue
+            </div>
+            <div class="single-img-wrapper">
+                <img class="result-gif" src="./results/face_jocker.gif" alt="">
+                Golden bear statue
+            </div>
+            <div class="single-img-wrapper">
+                <img class="result-gif" src="./results/face_moustache.gif" alt="">
+                Golden bear statue
+            </div>
+        </div>
+
+        <!-- face 2 -->
+        <div class="results-wrapper">
+            <div class="single-img-wrapper">
+                <img class="result-gif" src="./imgs/transparent.png" alt="">
+            </div>
+            <div class="single-img-wrapper">
+                <img class="result-gif" src="./results/face_oldman.gif" alt="">
+                Polar bear
+            </div>
+            <div class="single-img-wrapper">
+                <img class="result-gif" src="./results/face_redhair.gif" alt="">
+                Golden bear statue
+            </div>
+            <div class="single-img-wrapper">
+                <img class="result-gif" src="./results/face_sunglasses.gif" alt="">
+                Golden bear statue
+            </div>
+            <div class="single-img-wrapper">
+                <img class="result-gif" src="./results/face_womanmakeup.gif" alt="">
+                Golden bear statue
+            </div>
+        </div>
+
+        <!-- fangzhou1 -->
+        <div class="results-wrapper">
+            <div class="single-img-wrapper">
+                <img class="result-gif" src="./results/fangzhou.gif" alt="">
+                Grizzly bear
+            </div>
+            <div class="single-img-wrapper">
+                <img class="result-gif" src="./results/fangzhou_baby.gif" alt="">
+                Polar bear
+            </div>
+            <div class="single-img-wrapper">
+                <img class="result-gif" src="./results/fangzhou_chineseopera.gif" alt="">
+                Golden bear statue
+            </div>
+            <div class="single-img-wrapper">
+                <img class="result-gif" src="./results/fangzhou_glasses.gif" alt="">
+                Golden bear statue
+            </div>
+            <div class="single-img-wrapper">
+                <img class="result-gif" src="./results/fangzhou_maasai.gif" alt="">
+                Golden bear statue
+            </div>
+        </div>
+
+        <!-- fangzhou 2 -->
+        <div class="results-wrapper">
+            <div class="single-img-wrapper">
+                <img class="result-gif" src="./imgs/transparent.png" alt="">
+            </div>
+            <div class="single-img-wrapper">
+                <img class="result-gif" src="./results/fangzhou_old.gif" alt="">
+                Polar bear
+            </div>
+            <div class="single-img-wrapper">
+                <img class="result-gif" src="./results/fangzhou_oldlady.gif" alt="">
+                Golden bear statue
+            </div>
+            <div class="single-img-wrapper">
+                <img class="result-gif" src="./results/fangzhou_womanmakeup.gif" alt="">
+                Golden bear statue
+            </div>
+            <div class="single-img-wrapper">
+                <img class="result-gif" src="./results/fangzhou_bust.gif" alt="">
+                Golden bear statue
+            </div>
+        </div>
+
+        <!-- stonehorse and garden -->
+        <div class="results-wrapper">
+            <div class="single-img-wrapper">
+                <img class="result-gif" src="./results/stonehorse.gif" alt="">
+            </div>
+            <div class="single-img-wrapper">
+                <img class="result-gif" src="./results/stonehorse_giraffe.gif" alt="">
+                Polar bear
+            </div>
+            <div class="single-img-wrapper">
+                <img class="result-gif" src="./results/stonehorse_zebra.gif" alt="">
+                Golden bear statue
+            </div>
+            <div class="single-img-wrapper">
+                <img class="result-gif" src="./results/garden.gif" alt="">
+                Golden bear statue
+            </div>
+            <div class="single-img-wrapper">
+                <img class="result-gif" src="./results/garden_snow.gif" alt="">
+                Golden bear statue
+            </div>
+            <div class="single-img-wrapper">
+                <img class="result-gif" src="./results/garden_bluetable.gif" alt="">
+                Golden bear statue
+            </div>
+        </div>
+    
+    </div>
+
+    <div class="abstract">
+        <h2 class="text-3xl" >
+            <b>Citation</b>
+        </h2>
+        <p>
+            If you use this work or find it helpful, please consider citing: (bibtex)
+        </p>
+        <div class="citation">
+            sd
+        </div>
+    </div>
+
+    <div class="abstract">
+        <h2 class="text-3xl" >
+            <b>Acknowledgement</b>
+        </h2>
+        <p>
+            Here, we include more examples besides those in our paper. 
+        </p>
+    </div>
+
+    <div class="footer">
+        Copyright <b>GaussCtrl</b>. All Rights Reserved
+    </div>
+
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/index.js"></script>
+    <script src="./src/original/dics.original.js"></script>
+    <script src="script.js" ></script>
+</body>
+</html>
