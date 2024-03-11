@@ -13,8 +13,17 @@
 <body>
 
     <section class="nav-bar">
-        <div class="abstract">
-            Abstract
+        <div class="nav-bear__item">
+            <a href="#abstract">Abstract</a>
+        </div>
+        <div class="nav-bear__item">
+            <a href="#method">Method</a>
+        </div>
+        <div class="nav-bear__item">
+            <a href="#results">Results</a>
+        </div>
+        <div class="nav-bear__item">
+            <a href="#citation">Citation</a>
         </div>
     </section>
 
@@ -48,8 +57,8 @@
                 <path d="M157.5,112.5h10c8.28,0,15,6.72,15,15v10c0,8.28-6.72,15-15,15h-10c-8.28,0-15-6.72-15-15v-10C142.5,119.22,149.22,112.5,157.5,112.5z" fill="#FF9800"/>
               </svg> -->
     
-            <h2 class="text-4xl" style="color: #ff8800;">
-                <u style="color: #ff8800;">GaussCtrl</u>: Multi-View Consistent Text-Driven 3D Gaussian Splatting Editing
+            <h2 class="heading text-4xl">
+                <u>GaussCtrl</u>: Multi-View Consistent Text-Driven 3D Gaussian Splatting Editing
             </h2>
     
     
@@ -169,10 +178,12 @@
 
     
     
-    <div class="abstract">
-        <h2 class="text-3xl" >
-            <b>Abstract</b>
-        </h2>
+    <div class="abstract" >
+        <a id="abstract">
+            <h2 class="text-3xl" >
+                <b>Abstract</b>
+            </h2>
+        </a>
         <p>
             We propose GaussCtrl, a text-driven method to edit a 3D scene reconstructed by the 3D Gaussian Splatting (3DGS).
             Our method first renders a collection of images by using the 3DGS and edits them by using a pre-trained 2D diffusion model (ControlNet) based on the input prompt, which is then used to optimise the 3D model.
@@ -185,10 +196,12 @@
         </p>
     </div>
 
-    <div class="abstract">
-        <h2 class="text-3xl" >
-            <b>Method</b>
-        </h2>
+    <div class="abstract" >
+        <a id="method">
+            <h2 class="text-3xl" >
+                <b>Method</b>
+            </h2>
+        </a>
         <p>
             We propose GaussCtrl, a text-driven method to edit a 3D scene reconstructed by the 3D Gaussian Splatting (3DGS).
             Our method first renders a collection of images by using the 3DGS and edits them by using a pre-trained 2D diffusion model (ControlNet) based on the input prompt, which is then used to optimise the 3D model.
@@ -235,10 +248,12 @@
     </section>
     
     <!-- Result -->
-    <div class="abstract">
-        <h2 class="text-3xl" >
-            <b>Result</b>
-        </h2>
+    <div class="abstract" >
+        <a id="results">
+            <h2 class="text-3xl" >
+                <b>Result</b>
+            </h2>
+        </a>
         <p>
             Here, we include more examples besides those in our paper. 
         </p>
@@ -416,10 +431,13 @@
     
     </div>
 
-    <div class="abstract">
-        <h2 class="text-3xl" >
-            <b>Citation</b>
-        </h2>
+    <!-- Citation -->
+    <div class="abstract" >
+        <a id="citation">
+            <h2 class="text-3xl" >
+                <b>Citation</b>
+            </h2>
+        </a>
         <p>
             If you use this work or find it helpful, please consider citing: (bibtex)
         </p>
@@ -428,6 +446,7 @@
         </div>
     </div>
 
+    <!-- Acknowledgement -->
     <div class="abstract">
         <h2 class="text-3xl" >
             <b>Acknowledgement</b>
@@ -438,7 +457,7 @@
     </div>
 
     <div class="footer">
-        Copyright <b>GaussCtrl</b>. All Rights Reserved
+        Copyright <b>GaussCtrl</b>. &nbsp All Rights Reserved.
     </div>
 
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>

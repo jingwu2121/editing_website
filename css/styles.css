@@ -5,12 +5,16 @@
 
 :root {
     --color-primary: #f3f1ec;
-    --color-secondary: #98c1e1;
+    --color-link-dark: #be0f34;
+    --color-link-light: #98c1e1;
+    --color-accent: #721627;  /* #ff8800 */
     --color-dark: #002147;
+    --color-body: black;
+    --color-background: #f0f5f8;
 }
 
 * {
-    /* color: white;
+    /* color: var(--color-body);
     background-color: #002147; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -30,6 +34,18 @@ ol li {
     background-color: var(--color-dark);
     color: var(--color-primary);
     font-size: large;
+    display: flex;
+    align-items: center; 
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    /* position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 100; */
+}
+
+.nav-bear__item {
+    margin: 0 1rem 0 1rem;
+    /* background-color: #be0f34; */
 }
 
 /* Title */
@@ -38,6 +54,11 @@ ol li {
     /* background-color: aqua; */
     height: fit-content;
     text-align: center;
+}
+
+.heading {
+    color: var(--color-accent);
+    font-weight: bold;
 }
 
 .conference {
@@ -138,7 +159,7 @@ ol li {
 
 .method-illustration {
     display: flex;
-    /* background-color: #98c1e1; */
+    background-color: var(--color-background);
     height: 10%;
     margin-bottom: 6rem;
     border-bottom: 1px solid rgba(117, 117, 117, 0.2);
@@ -226,11 +247,21 @@ model-viewer{
     color: var(--color-secondary);
 } */
 
-a:hover {
-    text-decoration: underline;
-    color: var(--color-secondary);
+.nav-bear__item:hover {
+    color: var(--color-link-light);
 }
 
+.hero a:hover {
+    text-decoration: underline;
+    color: var(--color-link-dark);
+}
+
+.button-group a:hover {
+    text-decoration: underline;
+    color: var(--color-link-dark);
+}
+
+
 .icon:hover {
-    fill: var(--color-secondary);
+    fill: var(--color-link-dark);
 }
