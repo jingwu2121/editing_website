@@ -157,11 +157,16 @@ ol li {
     text-align: justify;
 }
 
+.abstract .body-link {
+    text-decoration: underline;
+}
+
+/* Method */
 .method-illustration {
     display: flex;
     background-color: var(--color-background);
     height: 10%;
-    margin-bottom: 6rem;
+    margin: 6rem 0 6rem 0;
     border-bottom: 1px solid rgba(117, 117, 117, 0.2);
     border-top: 1px solid rgba(117, 117, 117, 0.2);
 }
@@ -209,6 +214,7 @@ model-viewer{
     height: 100%;
 }
 
+/* Results */
 .results-wrapper {
     display: flex;
     justify-content: space-between;
@@ -219,9 +225,10 @@ model-viewer{
     margin-right: 15%;
 }
 
-/* .single-img-wrapper {
-    background-color: aqua;
-} */
+.single-img-wrapper {
+    /* background-color: aqua; */
+    text-align: center;
+}
 
 .result-gif {
     width: 200px;
@@ -252,6 +259,11 @@ model-viewer{
 }
 
 .hero a:hover {
+    text-decoration: underline;
+    color: var(--color-link-dark);
+}
+
+.abstract .body-link:hover {
     text-decoration: underline;
     color: var(--color-link-dark);
 }

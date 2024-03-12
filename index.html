@@ -203,20 +203,19 @@
             </h2>
         </a>
         <p>
-            We propose GaussCtrl, a text-driven method to edit a 3D scene reconstructed by the 3D Gaussian Splatting (3DGS).
-            Our method first renders a collection of images by using the 3DGS and edits them by using a pre-trained 2D diffusion model (ControlNet) based on the input prompt, which is then used to optimise the 3D model.
-            Our key contribution is multi-view consistent editing, which enables editing all images together instead of iteratively editing one image while updating the 3D model as in previous works.
-            It leads to faster editing as well as higher visual quality.
-            This is achieved by the two terms: 
-            (a) <b>depth-conditioned editing</b> that enforces geometric consistency across multi-view images by leveraging naturally consistent depth maps.
-            (b) <b>attention-based latent code alignment</b> that unifies the appearance of edited images by conditioning their editing to several reference views through self and cross-view attention between images' latent representations.
-            Experiments demonstrate that our method achieves faster editing and better visual results than previous state-of-the-art methods. 
+            Our method enables multi-view consistent 3D editing conditioned on depth. In a nutshell, given an to-be-edited 3D Gaussian Splatting (3DGS) model, the method can be divide into 3 steps:
+            <ol>
+                <li>Render RGB and depth images from the model. </li>
+                <li>Reverse all the images to latent codes based on <a class="body-link" href="https://github.com/lllyasviel/ControlNet" target="_blank">ControlNet</a>, conditioned on depth.</li>
+                <li>Align all the views to several randomly selected reference views.</li>
+                <li>Keep training the given to-be-edited 3DGS model to finish the editing.</li>
+            </ol>
         </p>
     </div>
     
     <div class="method-illustration">
         <div class="viewer-3d">
-            <model-viewer src="./imgs/bearstatue_cropped.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1" camera-orbit="39.91deg 75.19deg 4.273m" field-of-view="30deg" auto-rotate environment-image="legacy" auto-rotate>
+            <model-viewer src="./imgs/bearstatue_cropped.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" shadow-intensity="1" camera-orbit="39.91deg 75.19deg 4.273m" field-of-view="30deg" auto-rotate environment-image="legacy" auto-rotate>
                 <div class="progress-bar hide" slot="progress-bar">
                     <div class="update-bar"></div>
                 </div>
@@ -228,7 +227,7 @@
         </div>
 
         <div class="viewer-3d">
-            <model-viewer src="./imgs/polarbear_cropped.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1" camera-orbit="39.91deg 75.19deg 4.273m" field-of-view="30deg" auto-rotate environment-image="legacy">
+            <model-viewer src="./imgs/polarbear_cropped.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" shadow-intensity="1" camera-orbit="39.91deg 75.19deg 4.273m" field-of-view="30deg" auto-rotate environment-image="legacy">
                 <div class="progress-bar hide" slot="progress-bar">
                     <div class="update-bar"></div>
                 </div>
@@ -236,7 +235,7 @@
         </div>
     </div>
     
-    <section class="video" >
+    <!-- <section class="video" >
         <h2 class="text-3xl text-center" >
             <b>Videos</b>
         </h2>
@@ -245,7 +244,7 @@
             src="https://www.youtube.com/embed/tgbNymZ7vqY">
             </iframe>
         </div>
-    </section>
+    </section> -->
     
     <!-- Result -->
     <div class="abstract" >
@@ -284,27 +283,27 @@
         <div class="results-wrapper">
             <div class="single-img-wrapper">
                 <img class="result-gif" src="./results/dinosaur.gif" alt="">
-                Bear statue
+                Dinosaur
             </div>
             <div class="single-img-wrapper">
                 <img class="result-gif" src="./results/dinosaur_night.gif" alt="">
-                Grizzly bear
+                Dinosaur at night
             </div>
             <div class="single-img-wrapper">
                 <img class="result-gif" src="./results/dinosaur_robot.gif" alt="">
-                Polar bear
+                Robot dinosaur
             </div>
             <div class="single-img-wrapper">
                 <img class="result-gif" src="./results/dinosaur_snow.gif" alt="">
-                Golden bear statue
+                Dinosaur in the snow
             </div>
             <div class="single-img-wrapper">
                 <img class="result-gif" src="./results/dinosaur_storm.gif" alt="">
-                Golden bear statue
+                Dinosaur in the storm
             </div>
             <div class="single-img-wrapper">
                 <img class="result-gif" src="./results/dinosaur_water.gif" alt="">
-                Golden bear statue
+                Dinosaur under the water
             </div>
         </div>
 
@@ -312,23 +311,23 @@
         <div class="results-wrapper">
             <div class="single-img-wrapper">
                 <img class="result-gif" src="./results/face.gif" alt="">
-                Grizzly bear
+                A man
             </div>
             <div class="single-img-wrapper">
                 <img class="result-gif" src="./results/face_bust.gif" alt="">
-                Polar bear
+                Bronze bust
             </div>
             <div class="single-img-wrapper">
                 <img class="result-gif" src="./results/face_glasses.gif" alt="">
-                Golden bear statue
+                With glasses
             </div>
             <div class="single-img-wrapper">
                 <img class="result-gif" src="./results/face_jocker.gif" alt="">
-                Golden bear statue
+                Jocker
             </div>
             <div class="single-img-wrapper">
                 <img class="result-gif" src="./results/face_moustache.gif" alt="">
-                Golden bear statue
+                With moustache
             </div>
         </div>
 
@@ -339,19 +338,19 @@
             </div>
             <div class="single-img-wrapper">
                 <img class="result-gif" src="./results/face_oldman.gif" alt="">
-                Polar bear
+                Old man
             </div>
             <div class="single-img-wrapper">
                 <img class="result-gif" src="./results/face_redhair.gif" alt="">
-                Golden bear statue
+                Red hair
             </div>
             <div class="single-img-wrapper">
                 <img class="result-gif" src="./results/face_sunglasses.gif" alt="">
-                Golden bear statue
+                With sunglasses
             </div>
             <div class="single-img-wrapper">
                 <img class="result-gif" src="./results/face_womanmakeup.gif" alt="">
-                Golden bear statue
+                Woman
             </div>
         </div>
 
@@ -359,23 +358,23 @@
         <div class="results-wrapper">
             <div class="single-img-wrapper">
                 <img class="result-gif" src="./results/fangzhou.gif" alt="">
-                Grizzly bear
+                Fangzhou
             </div>
             <div class="single-img-wrapper">
                 <img class="result-gif" src="./results/fangzhou_baby.gif" alt="">
-                Polar bear
+                Baby
             </div>
             <div class="single-img-wrapper">
                 <img class="result-gif" src="./results/fangzhou_chineseopera.gif" alt="">
-                Golden bear statue
+                Chinese opera face paint
             </div>
             <div class="single-img-wrapper">
                 <img class="result-gif" src="./results/fangzhou_glasses.gif" alt="">
-                Golden bear statue
+                With glasses
             </div>
             <div class="single-img-wrapper">
                 <img class="result-gif" src="./results/fangzhou_maasai.gif" alt="">
-                Golden bear statue
+                Maasai face paint
             </div>
         </div>
 
@@ -386,19 +385,19 @@
             </div>
             <div class="single-img-wrapper">
                 <img class="result-gif" src="./results/fangzhou_old.gif" alt="">
-                Polar bear
+                Old man
             </div>
             <div class="single-img-wrapper">
                 <img class="result-gif" src="./results/fangzhou_oldlady.gif" alt="">
-                Golden bear statue
+                Old lady
             </div>
             <div class="single-img-wrapper">
                 <img class="result-gif" src="./results/fangzhou_womanmakeup.gif" alt="">
-                Golden bear statue
+                Woman
             </div>
             <div class="single-img-wrapper">
                 <img class="result-gif" src="./results/fangzhou_bust.gif" alt="">
-                Golden bear statue
+                Bronze bust
             </div>
         </div>
 
@@ -406,26 +405,27 @@
         <div class="results-wrapper">
             <div class="single-img-wrapper">
                 <img class="result-gif" src="./results/stonehorse.gif" alt="">
+                Stone horse
             </div>
             <div class="single-img-wrapper">
                 <img class="result-gif" src="./results/stonehorse_giraffe.gif" alt="">
-                Polar bear
+                Giraffe
             </div>
             <div class="single-img-wrapper">
                 <img class="result-gif" src="./results/stonehorse_zebra.gif" alt="">
-                Golden bear statue
+                Zebra
             </div>
             <div class="single-img-wrapper">
                 <img class="result-gif" src="./results/garden.gif" alt="">
-                Golden bear statue
+                Garden
             </div>
             <div class="single-img-wrapper">
                 <img class="result-gif" src="./results/garden_snow.gif" alt="">
-                Golden bear statue
+                Garden in the snow
             </div>
             <div class="single-img-wrapper">
                 <img class="result-gif" src="./results/garden_bluetable.gif" alt="">
-                Golden bear statue
+                Blue table
             </div>
         </div>
     
@@ -452,7 +452,7 @@
             <b>Acknowledgement</b>
         </h2>
         <p>
-            Here, we include more examples besides those in our paper. 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae laborum labore laudantium, officiis fugit exercitationem sapiente expedita amet soluta sequi ratione dolore aspernatur saepe quo reiciendis incidunt, similique necessitatibus. Dolor.
         </p>
     </div>
 
