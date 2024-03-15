@@ -306,7 +306,7 @@ model-viewer{
     fill: var(--color-link-dark);
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 550px) {
     body {
         font-size: 0.6rem;
     }
