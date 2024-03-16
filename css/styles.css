@@ -226,6 +226,10 @@ model-viewer{
     margin-right: 15%;
 }
 
+video {
+    width: 100%;
+}
+
 .results-wrapper {
     display: flex;
     justify-content: space-between;
@@ -318,5 +322,15 @@ model-viewer{
     model-viewer{
         width: 100px;
         height:100px;
+    }
+
+    .results-container{
+        margin-left: 15%;
+        margin-right: 15%;
+        display: block;
+    }
+
+    video {
+        width: 100%;
     }
   }
