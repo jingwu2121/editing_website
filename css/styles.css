@@ -207,10 +207,6 @@ model-viewer{
 .video-wrapper {
     position: relative; 
     padding-bottom: 56.25%;
-    /* padding-top: 25px; */
-    /* background-color: #98c1e1; */
-    /* margin-left: 10%; */
-    /* margin-right: 10%; */
 }
 .video-wrapper iframe {
     position: absolute; 
