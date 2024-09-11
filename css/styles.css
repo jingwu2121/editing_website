@@ -202,9 +202,22 @@ model-viewer{
 
 /* video */
 .video {
-    margin-bottom: 4rem;
+    margin-left: 15%;
+    margin-right: 10%;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
-.video-wrapper {
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+}
+/* .video-wrapper {
     position: relative; 
     padding-bottom: 56.25%;
 }
@@ -214,7 +227,7 @@ model-viewer{
     left: 10%; 
     width: 80%; 
     height: 80%;
-}
+} */
 
 /* Results */
 .results-container{
